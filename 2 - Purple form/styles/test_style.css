@@ -1,0 +1,28 @@
+main {
+    background-color: #1E1D22;
+    width: 450px;
+}
+
+h1 {
+    color: #F7F8FF;
+    font-size: 30px;
+    font-weight: bold;
+    font-family: 'Arial', monospace;
+}
+
+input[type="text"],
+textarea,
+select {
+    background-color: #2E2C3C;
+    color: #F7F8FF;
+    line-height: 15px;
+}
+
+label {
+    color: #727081;
+}
+
+#submit_button {
+    background-color: #6C37CA;
+    color: #F7F8FF;
+}
