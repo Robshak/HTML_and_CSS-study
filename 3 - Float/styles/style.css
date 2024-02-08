@@ -1,0 +1,67 @@
+.divR {
+    background-color: red;
+    display: inline-block;
+
+    height: 100px;
+    width: 100px;
+}
+
+.divG {
+    background-color: green;
+    display: inline-block;
+
+    height: 100px;
+    width: 100px;
+}
+
+.divB {
+    background-color: blue;
+    display: inline-block;
+
+    height: 100px;
+    width: 100px;
+}
+
+section {
+    margin-bottom: 10px;
+}
+
+.static .divG {
+    position: static;
+}
+
+.relative .divG {
+    position: relative;
+    top: 50px;
+    left: -50px;
+}
+
+.absolute .divG {
+    /*
+    вырывается из потока
+    ставится относительно первого предка с позиционирование relative, если таких нет - то относится к краю экрана
+    для всплывающих блоков
+    */
+    position: absolute;
+    left: 50px;
+}
+
+.fixed .divG {
+    /*
+    вырывается из потока
+    фиксируется относительно экрана и остаётся на месте даже при скроле
+    хорошо для создания какой-либо кнопки или чата которые должны привязоваться к экрану
+    */
+    position: fixed;
+    /* left: 50px;
+    top: 50px; */
+}
+
+.sticky .divG {
+    /*
+    вертикально плавает относительно скрола пока не кончится пространство
+    */
+    position: sticky;
+}
+
+/* text-align:; */

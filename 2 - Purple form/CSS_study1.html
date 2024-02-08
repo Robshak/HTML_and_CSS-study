@@ -4,54 +4,44 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Here I will test form element</title>
+    <title>Feedback form</title>
     <link rel="stylesheet" href="./styles/test_style.css">
 </head>
 
 <body>
-    <main class="MainForm">
-        <div class="FormHeader">
-            <h1>Форма братной связи</h1>
-        </div>
-        <form action="#" class="register_form_class">
-            <div>
-                <!-- <label for="user_email">Enter email*</label> -->
-                <div class="BorderedInput">
-                    <input type="email" name="user_email" id="user_email" placeholder="Enter email" required />
-                </div>
+    <section>
+        <form action="#" class="Feedback">
+            <div class="FormName">
+                Feedback Form
             </div>
-            <div>
-                <!-- <label for="telegram_id">Enter telegram id*</label> -->
-                <div class="BorderedInput">
-                    <input type="text" name="telegram_id" id="telegram_id" placeholder="Enter telegram id" />
-                </div>
+            <div class="InputDiv">
+                <img src="./imgs/email.svg" alt="email" class="icon" id="iconEmail">
+                <label for="email">E-mail*</label>
+                <input type="email" id="email" class="InputBlock" placeholder="Enter email" required>
             </div>
-            <div class="BorderedInput">
-                <!-- <label for="theme"></label> -->
-                <select name="theme" id="theme" class="theme">
-                    <option value="buy">Приобритение курсов</option>
-                    <option value="back">Возврат средств</option>
-                    <option value="complaint">Жалоба</option>
-                    <option value="none">Другая</option>
+            <div class="InputDiv">
+                <img src="./imgs/telegram.svg" alt="email" class="icon" id="iconTelegram">
+                <label for="telegram">Telegram</label>
+                <input type="text" id="telegram" class="InputBlock" placeholder="Enter telegram">
+            </div>
+            <div class="InputDiv">
+                <img src="./imgs/theme.svg" alt="email" class="icon" id="iconTheme">
+                <label for="theme">Theme*</label>
+                <select name="theme" id="theme" class="InputBlock" required>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
                 </select>
             </div>
-            <div class="BorderedInput">
-                <!-- <label for="comment">Comment</label> -->
-                <textarea name="comment" id="comment" cols="30" rows="10" class="comment" placeholder="Enter comment"
+            <div class="InputDiv CommentDiv">
+                <label for="comment">Comment*</label>
+                <textarea name="comment" id="comment" class="InputBlock" cols="30" rows="10" placeholder="Enter comment"
                     required></textarea>
             </div>
-            <button type="submit" id="submit_button">Send form</button>
+            <div class="InputDiv"><button type="submit" class="InputBlock SendButton">Send</button></div>
         </form>
-    </main>
-    <!-- <ul>
-        <li><a href="#">groceries</a></li>
-        <li><a href="#">solutions</a></li>
-        <li><a href="#">resources</a></li>
-        <li><a href="#">123</a></li>
-        <li><a href="#">321</a></li>
-    </ul> -->
-    <!-- <div class="testDiv bordered">TestDiv</div> -->
-    <!-- <div class="testDiv">TestDiv</div> -->
+    </section>
 </body>
 
 </html>

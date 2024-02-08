@@ -1,131 +1,105 @@
-.MainForm {
-    background-color: #1E1D22;
-
-    width: 600px;
-    height: 480px;
-    border-radius: 20px;
-
-    padding: 15px 10px;
+textarea {
+    resize: none;
 }
 
-.FormHeader h1 {
-    color: #F7F8FF;
-    font-size: 30px;
-    font-weight: bold;
-    font-family: 'Arial', monospace;
+.Feedback label {
+    color: #AFB2BF;
+    font-size: 12px;
+
+    position: absolute;
+    top: 7px;
+    left: 50px;
 }
 
-.FormHeader {
-    margin: 10px 137px;
+.Feedback .CommentDiv label {
+    left: 20px;
 }
 
-input[type="text"],
-input[type="email"],
-select.theme,
-#submit_button {
-    height: 40px;
+.icon {
+    position: absolute;
+    left: 14px;
 }
 
-input[type="text"],
-input[type="email"],
-select.theme,
-.comment,
-#submit_button {
-    width: 500px;
+#iconEmail {
+    top: 20px;
+}
+
+#iconTelegram {
+    top: 17px;
+}
+
+#iconTheme {
+    top: 17px;
+}
+
+.Feedback {
+    background-color: #1E1F29;
+
+    display: inline-block;
+
+    width: 793px;
+    height: 620px;
+    border-radius: 10px
+}
+
+.FormName {
+    color: #FAFAFA;
+
+    margin-top: 50px;
+    margin-bottom: 30px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 40px;
+    text-align: center;
+}
+
+.InputDiv {
+    margin-bottom: 15px;
+    display: inline-block;
+    position: relative;
+    left: 48px;
+}
+
+.InputBlock {
+    color: #FAFAFA;
+    background-color: #2E2D3D;
+    font-size: 16px;
 
     border: none;
     border-radius: 10px;
 
-    padding: 0px 40px;
+    width: 697px;
+    height: 58px;
+
     box-sizing: border-box;
-    margin: 0px 50px;
+    padding: 15px 0 0 50px;
 }
 
-.comment {
-    resize: none;
+.InputDiv #comment {
+    height: 135px;
 }
 
-.BorderedInput {
-    border-bottom: 15px solid #1e1d2200;
+.CommentDiv {
+    margin-bottom: 25px;
 }
 
-input[type="text"],
-input[type="email"],
-textarea,
-select {
-    background-color: #2E2C3C;
-    color: #F7F8FF;
-    line-height: 15px;
+.CommentDiv .InputBlock {
+    padding: 25px 0 0 20px;
 }
 
-/* select {
-    appearance: none;
-} */
+.SendButton {
+    color: #FAFAFA;
+    background-color: #6C38CC;
+    font-size: 20px;
 
-#submit_button {
-    background-color: #6C37CA;
-    color: #F7F8FF;
+    padding: 0px;
 }
 
-#submit_button:hover {
-    background-color: rgb(79, 40, 146);
-    color: #d1d2d8;
+.SendButton:hover {
+    color: #d1d1d1;
+    background-color: #5b31aa;
 }
 
-#submit_button:active {
-    background-color: rgb(62, 31, 116);
-    color: #abacb1;
-}
-
-input[type="email"]:valid {
-    background-color: green;
-}
-
-/* input[type="email"]:invalid {
-    background-color: red;
-} */
-
-/* #theme option:first-child {
-    color: red;
-} */
-
-/* #theme option:nth-child(2n - 1) {
-    color: red;
-} */
-
-ul {
-    list-style: none;
-}
-
-ul li::marker {
-    content: url(../imgs/telegram.svg);
-}
-
-ul a {
-    color: aqua;
-}
-
-ul a:hover {
-    color: rgb(3, 184, 184) !important;
-}
-
-label {
-    color: #727081;
-}
-
-.testDiv {
-    background-color: red;
-    width: 400px;
-    height: 500px;
-
-    /* padding-left: 20px;
-    padding-top: 20px; */
-    padding: 20px 40px;
-}
-
-.bordered {
-    /* box-sizing: border-box; */
-    border: 2px solid #F7F8FF;
-    border-left: 5px solid #000000;
-    margin: 30px;
+.SendButton:focus {
+    color: #a3a3a3;
+    background-color: #492788;
 }
