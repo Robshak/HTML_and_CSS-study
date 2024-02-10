@@ -1,0 +1,25 @@
+.exp div {
+    width: 300px;
+    height: 300px;
+    margin: 10px;
+    background-color: blue;
+
+    animation: my-move 2s ease forwards;
+    animation-iteration-count: infinite;
+}
+
+.exp div:hover {
+    animation-play-state: paused;
+}
+
+@keyframes my-move {
+    33% {
+        transform: translateX(100%);
+    }
+
+    66% {
+        transform: translateX(100%) translateY(100%);
+    }
+
+    100% {}
+}

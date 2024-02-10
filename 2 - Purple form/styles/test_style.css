@@ -92,6 +92,9 @@ textarea {
     font-size: 20px;
 
     padding: 0px;
+
+    /* transition: all 200ms; */
+    transition: background-color 200ms, color 200ms;
 }
 
 .SendButton:hover {
@@ -102,4 +105,5 @@ textarea {
 .SendButton:focus {
     color: #a3a3a3;
     background-color: #492788;
+    /* transition: all 0s; */
 }
