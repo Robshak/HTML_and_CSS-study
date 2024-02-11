@@ -10,39 +10,41 @@
 </head>
 
 <body>
-    <section>
-        <form action="#" class="Feedback">
-            <div class="FormName">
-                Feedback Form
-            </div>
-            <div class="InputDiv">
-                <img src="./imgs/email.svg" alt="email" class="icon" id="iconEmail">
-                <input type="email" id="email" class="InputBlock" placeholder=" " required>
-                <label for="email" class="AnimationLabel">E-mail*</label>
-            </div>
-            <div class="InputDiv">
-                <img src="./imgs/telegram.svg" alt="email" class="icon" id="iconTelegram">
-                <input type="text" id="telegram" class="InputBlock" placeholder=" ">
-                <label for="telegram" class="AnimationLabel">Telegram</label>
-            </div>
-            <div class="InputDiv">
-                <img src="./imgs/theme.svg" alt="email" class="icon" id="iconTheme">
-                <label for="theme">Theme*</label>
-                <select name="theme" id="theme" class="InputBlock" required>
-                    <option value="1">1</option>
-                    <option value="2">2</option>
-                    <option value="3">3</option>
-                    <option value="4">4</option>
-                </select>
-            </div>
-            <div class="InputDiv CommentDiv">
-                <label for="comment">Comment*</label>
-                <textarea name="comment" id="comment" class="InputBlock" cols="30" rows="10" placeholder="Enter comment"
-                    required></textarea>
-            </div>
-            <div class="InputDiv"><button type="submit" class="InputBlock SendButton">Send</button></div>
-        </form>
-    </section>
+    <main class="FeedbackSection">
+        <section>
+            <form action="#" class="FeedbackForm">
+                <div class="FormName">
+                    Feedback Form
+                </div>
+                <div class="InputDiv">
+                    <img src="./imgs/email.svg" alt="email" class="icon" id="iconEmail">
+                    <input type="email" id="email" class="InputBlock" placeholder=" " required>
+                    <label for="email" class="AnimationLabel">E-mail*</label>
+                </div>
+                <div class="InputDiv">
+                    <img src="./imgs/telegram.svg" alt="email" class="icon" id="iconTelegram">
+                    <input type="text" id="telegram" class="InputBlock" placeholder=" ">
+                    <label for="telegram" class="AnimationLabel">Telegram</label>
+                </div>
+                <div class="InputDiv">
+                    <img src="./imgs/theme.svg" alt="email" class="icon" id="iconTheme">
+                    <label for="theme">Theme*</label>
+                    <select name="theme" id="theme" class="InputBlock" required>
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                    </select>
+                </div>
+                <div class="InputDiv CommentDiv">
+                    <label for="comment">Comment*</label>
+                    <textarea name="comment" id="comment" class="InputBlock" cols="30" rows="10"
+                        placeholder="Enter comment" required></textarea>
+                </div>
+                <div class="InputDiv"><button type="submit" class="InputBlock SendButton">Send</button></div>
+            </form>
+        </section>
+    </main>
 </body>
 
 </html>

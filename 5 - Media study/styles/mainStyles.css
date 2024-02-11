@@ -1,0 +1,12 @@
+.TestBlock {
+    height: 500px;
+    width: 500px;
+    background-color: blue;
+    margin: 10px;
+}
+
+@media (max-width: 500px) {
+    .TestBlock {
+        background-color: red;
+    }
+}
