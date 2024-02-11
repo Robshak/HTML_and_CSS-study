@@ -6,13 +6,18 @@ body {
     background-color: #15161d;
 }
 
-.Feedback label {
+label {
     color: #AFB2BF;
     font-size: 12px;
 
     position: absolute;
     top: 7px;
     left: 50px;
+}
+
+.AnimationLabel {
+    top: 1.2em;
+    font-size: 1em;
 }
 
 .Feedback .CommentDiv label {
@@ -76,7 +81,11 @@ body {
     height: 58px;
 
     box-sizing: border-box;
-    padding: 15px 0 0 50px;
+    padding: 0 0 0 50px;
+}
+
+#theme {
+    padding-top: 10px;
 }
 
 .InputDiv #comment {
@@ -97,18 +106,4 @@ body {
     font-size: 20px;
 
     padding: 0px;
-
-    /* transition: all 200ms; */
-    transition: background-color 200ms, color 200ms;
-}
-
-.SendButton:hover {
-    color: #d1d1d1;
-    background-color: #5b31aa;
-}
-
-.SendButton:focus {
-    color: #a3a3a3;
-    background-color: #492788;
-    /* transition: all 0s; */
 }

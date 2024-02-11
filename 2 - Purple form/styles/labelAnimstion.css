@@ -1,0 +1,22 @@
+.AnimationLabel {
+    transition: transform 0.2s ease;
+}
+
+.InputBlock:focus~.AnimationLabel,
+.InputBlock:not(:placeholder-shown)~.AnimationLabel {
+    transform: translateX(-0.4em) translateY(-1em) scale(0.75);
+}
+
+.SendButton {
+    transition: background-color 150ms, color 150ms;
+}
+
+.SendButton:hover {
+    color: #d1d1d1;
+    background-color: #5b31aa;
+}
+
+.SendButton:focus {
+    color: #a3a3a3;
+    background-color: #492788;
+}
