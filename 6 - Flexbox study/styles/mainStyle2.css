@@ -1,0 +1,44 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #1c1b21;
+    color: #FAFAFA;
+    font-size: 55px;
+}
+
+.container {
+    border: 10px solid #6c38cc;
+    display: flex;
+    flex-direction: row;
+    /* flex-wrap: wrap; */
+
+    align-items: start;
+}
+
+.item {
+    background-color: #232228;
+    border: 1px solid #6c38cc;
+    text-align: center;
+    padding: 10px;
+
+    /* пространство, которое блок займёт по умолчанию(если он сам не больше) */
+    flex-basis: 300px;
+
+    /* по каким долям блоки будут занимать оставшееся свободное пространство */
+    flex-grow: 1;
+
+    /* насколько сильно сжать один элемент относительно другого */
+    flex-shrink: 1;
+
+    /* есть короткая запись (grow, shrink, basis)
+       flex: 1 1 300px                             */
+
+    /* так же все эти свойства работают только в рамках одной строки */
+}
+
+.item2 {
+    flex-grow: 5;
+    flex-shrink: 5;
+}

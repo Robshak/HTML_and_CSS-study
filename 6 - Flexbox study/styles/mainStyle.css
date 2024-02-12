@@ -1,0 +1,63 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #1c1b21;
+    color: #FAFAFA;
+    font-size: 55px;
+}
+
+.container {
+    border: 10px solid #6c38cc;
+    display: flex;
+    height: 700px;
+
+    /* направление главной оси */
+    flex-direction: row;
+
+    /* направление вспомогательной оси */
+    flex-wrap: wrap;
+
+    /* помогает правильно выстроить элементы по главной оси */
+    /* justify-content: center; */
+    /* justify-content: space-evenly; */
+
+    /* помогает правильно выстроить элементы по вспомогательной оси относительно их состояния */
+    align-items: flex-start;
+
+    /* помогает правильно выстроить элементы по вспомогательной оси относительно пространства */
+    /* align-content: flex-start; */
+}
+
+.item {
+    background-color: #232228;
+    border: 1px solid #6c38cc;
+    text-align: center;
+    padding: 10px;
+    /* width: calc(100% / 3); */
+
+    /* помогает настроить размеры блоков относительно друг друга */
+    flex: 1;
+}
+
+.item3 {
+    flex: 2;
+}
+
+/* .item8 {
+    order: -1;
+}
+
+.item1 {
+    order: 2;
+}
+
+.item4 {
+    order: 5;
+} */
+
+/* применяет align локально для элемента */
+/* .item2 {
+    align-self: center;
+} */
