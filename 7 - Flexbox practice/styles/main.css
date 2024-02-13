@@ -127,6 +127,7 @@ footer .baseURLblock:hover {
 .emailform {
     display: flex;
     flex-direction: column;
+    margin-bottom: 20px;
 
     height: 360px;
 }
