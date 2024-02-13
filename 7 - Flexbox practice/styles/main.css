@@ -3,60 +3,136 @@
 }
 
 body {
+    /* background-color: #fbf7ef; */
     color: #050038;
     font-family: "Roboto", sans-serif;
+    margin: 0;
 }
 
-.headFlexbox {
+.headFlexbox,
+main,
+.footerFlexbox {
+    max-width: 1400px;
+    margin: 0 auto;
+}
+
+header {
+    background-color: #fff;
+}
+
+main {
     display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    width: 40vw;
-    height: 90px;
-
-    justify-content: space-evenly;
-    align-content: center;
-    /* flex-basis: ; */
+    flex-direction: column;
+    gap: 180px;
+    margin-top: 50px;
 }
 
-.headItem {
+footer {
+    background-color: #050038;
+}
+
+hr {
+    margin: 0;
+}
+
+.baseURLblock {
     padding: 14px 4px;
-    border-radius: 10%;
+    border-radius: 10px;
 
     text-align: center;
     font-size: 16px;
 }
 
-.headURL {
-    color: #050038;
+.baseURL {
     text-decoration: none;
 }
 
-.headItem:hover {
+.baseURLblock:hover {
     text-decoration: underline;
     background-color: rgba(0, 0, 0, 0.178);
 }
 
-.headItem:active {
+.baseURLblock:active {
     background-color: #FFD02F;
+}
+
+.baseURLblock .baseURL:focus {
+    color: #050038;
+}
+
+footer .baseURL,
+footer.baseURL:focus {
+    color: #fff !important;
+}
+
+footer .baseURLblock:hover {
+    background-color: rgba(0, 0, 0, 0.568);
+}
+
+.headFlexbox,
+.footerFlexbox {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin: 0 auto;
+    max-width: 1400px;
+    height: 90px;
+
+    justify-content: left;
+    align-content: center;
+    gap: 1.5rem;
+
+    /* padding-left: 6.8rem; */
 }
 
 .contentBlock {
     display: flex;
     flex-direction: row;
+    justify-content: space-evenly;
+    /* justify-content: space-between; */
+    align-items: center;
+
+    /* margin-left: 5vw; */
+    /* gap: 65px; */
+}
+
+.contentBlock .tagline {
+    color: #05003899;
+    margin-bottom: 40px;
+}
+
+.contentBlock .baseURLblock {
+    max-width: 100px;
+}
+
+.contentBlock ul {
+    padding-left: 10px;
+}
+
+.contentBlock li {
+    color: #05003899;
+    font-size: 18px;
+    margin-bottom: 15px;
+}
+
+.contentBlock li::marker {
+    content: url(../imgs/icon/Frame.svg);
+}
+
+.emailform,
+.textBlock {
+    width: 23vw;
 }
 
 .emailform {
     display: flex;
     flex-direction: column;
 
-    margin-left: 5vw;
-    width: 40vw;
-    height: 600px;
+    height: 360px;
 }
 
-.emailform .headerTagline {
-    margin-top: 50px;
+.headerTagline {
+    font-size: 48px;
     margin-bottom: 15px;
 }
 
@@ -76,6 +152,10 @@ body {
     border: 2px solid #9B99AF;
 }
 
+.emailform .mailInput:hover {
+    border-color: #4262FF;
+}
+
 .emailform .formButton {
     border: 2px solid #4262FF;
     background-color: #4262FF;
@@ -88,13 +168,11 @@ body {
 .emailform .formButton:hover {
     border-color: #3955df;
     background-color: #3955df;
-    color: #d5d5d5;
 }
 
 .emailform .formButton:focus {
     border-color: #2f47bd;
     background-color: #2f47bd;
-    color: #a5a4a4;
 }
 
 .emailform .minifooter {
@@ -102,7 +180,81 @@ body {
     color: #050038;
 }
 
-.emailform .urlsBlock {
+.textBlock .urlsBlock,
+.textBlock .urlsBlock .urls {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+
+    font-size: 18px;
+}
+
+.textBlock .urlsBlock .text {
+    margin-right: auto;
+}
+
+.block4 {
+    align-items: start;
+}
+
+.block4 .baseURLblock {
+    margin-bottom: 70px;
+}
+
+.block4 .tagline {
+    margin-bottom: 20px;
+}
+
+.block4 .urls {
     display: flex;
     flex-direction: row;
+    justify-content: left;
+    gap: 30px;
+}
+
+.lastBlock .contentHead {
+    margin-bottom: 50px;
+}
+
+.lastBlock .contentHead {
+    margin-left: 1.5rem;
+}
+
+.lastBlock .contentHead .headerTagline {
+    margin-bottom: 50px;
+}
+
+.lastBlock .urlList {
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    gap: 30px;
+    font-size: 14px;
+}
+
+.lastBlock .urlList .utlBlock {
+    padding: 10px;
+    border: 2px solid #9B99AF;
+    border-radius: 30px;
+}
+
+.lastBlock .urlList .utlBlock a {
+    color: #050038;
+    text-decoration: none;
+}
+
+.lastBlock .urlList .utlBlock a:focus {
+    color: #050038;
+}
+
+.lastBlock .urlList .utlBlock:hover {
+    background-color: #9B99AF;
+}
+
+.lastBlock .urlList .utlBlock:active {
+    background-color: #7c7a8b;
+    border-color: #7c7a8b;
 }
