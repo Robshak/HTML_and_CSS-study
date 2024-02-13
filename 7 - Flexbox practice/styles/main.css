@@ -4,6 +4,7 @@
 
 body {
     /* background-color: #fbf7ef; */
+    /* width: max(100%, 900px); */
     color: #050038;
     font-family: "Roboto", sans-serif;
     margin: 0;
@@ -81,19 +82,19 @@ footer .baseURLblock:hover {
     justify-content: left;
     align-content: center;
     gap: 1.5rem;
-
-    /* padding-left: 6.8rem; */
 }
 
 .contentBlock {
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
-    /* justify-content: space-between; */
+    flex-wrap: wrap;
     align-items: center;
+}
 
-    /* margin-left: 5vw; */
-    /* gap: 65px; */
+.textBlock {
+    display: flex;
+    flex-direction: column;
 }
 
 .contentBlock .tagline {
@@ -128,8 +129,6 @@ footer .baseURLblock:hover {
     display: flex;
     flex-direction: column;
     margin-bottom: 20px;
-
-    height: 360px;
 }
 
 .headerTagline {
