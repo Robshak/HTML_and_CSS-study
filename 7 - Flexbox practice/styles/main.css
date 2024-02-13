@@ -41,6 +41,68 @@ body {
     background-color: #FFD02F;
 }
 
-.tagline {
+.contentBlock {
+    display: flex;
+    flex-direction: row;
+}
+
+.emailform {
+    display: flex;
+    flex-direction: column;
+
+    margin-left: 5vw;
+    width: 40vw;
+    height: 600px;
+}
+
+.emailform .headerTagline {
+    margin-top: 50px;
+    margin-bottom: 15px;
+}
+
+.emailform .tagline {
+    margin-bottom: 50px;
+}
+
+.emailform .mailInput,
+.emailform .formButton {
+    height: 50px;
+    margin-bottom: 10px;
+    border-radius: 20px;
+    padding: 0px 10px;
+}
+
+.emailform .mailInput {
+    border: 2px solid #9B99AF;
+}
+
+.emailform .formButton {
+    border: 2px solid #4262FF;
+    background-color: #4262FF;
+
     font-size: 18px;
+    color: #FFFFFF;
+    text-align: center;
+}
+
+.emailform .formButton:hover {
+    border-color: #3955df;
+    background-color: #3955df;
+    color: #d5d5d5;
+}
+
+.emailform .formButton:focus {
+    border-color: #2f47bd;
+    background-color: #2f47bd;
+    color: #a5a4a4;
+}
+
+.emailform .minifooter {
+    font-size: 14px;
+    color: #050038;
+}
+
+.emailform .urlsBlock {
+    display: flex;
+    flex-direction: row;
 }
