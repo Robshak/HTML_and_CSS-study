@@ -74,3 +74,26 @@
     align-self: center;
     padding: 15px 70px;
 }
+
+@media (max-width: 1500px) {
+    .blog {
+        align-items: center;
+    }
+
+    .blog__head,
+    .blog__mainText {
+        text-align: center;
+    }
+}
+
+@media (max-width: 600px) {
+    .blog__block {
+        flex-direction: column;
+        padding-left: 10px !important;
+        padding-right: 10px !important;
+    }
+
+    .content__text {
+        margin-bottom: 25px;
+    }
+}

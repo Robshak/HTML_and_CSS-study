@@ -37,11 +37,12 @@ body {
 .content {
     max-width: var(--size-maxima);
     margin: 0 auto;
-    padding-top: 40px;
+    /* padding: 50px 40px 50px 0; */
+    padding: 40px 50px 0 50px;
 }
 
 section .content {
-    padding: 100px 0;
+    padding: 100px 50px;
 }
 
 a {
@@ -55,4 +56,11 @@ a:hover {
 
 .url:hover {
     color: var(--easy-blackout);
+}
+
+@media (max-width: 630px) {
+    .content {
+        padding-left: 15px !important;
+        padding-right: 15px !important;
+    }
 }

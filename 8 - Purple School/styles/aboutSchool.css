@@ -13,6 +13,7 @@
 
 .info__blocksInfo {
     display: flex;
+    flex-wrap: wrap;
     align-items: center;
     justify-content: space-between;
 
@@ -44,6 +45,7 @@
 
 .info__blocksGrade {
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
 }
@@ -52,13 +54,14 @@
     display: flex;
     flex-wrap: wrap;
     align-items: center;
+    gap: 20px;
     width: 360px;
+    padding: 30px 30px;
     border-radius: 10px;
     background-color: var(--darkviolet);
 }
 
 .info__block__gread {
-    padding: 30px 30px;
     font-size: 54px;
 }
 
@@ -69,4 +72,41 @@
 
 .info__block__platform {
     margin-bottom: 10px;
+}
+
+@media (max-width: 1500px) {
+    .info {
+        align-items: center;
+    }
+
+    .info__head,
+    .info__mainText,
+    .info__tagline {
+        text-align: center;
+    }
+
+    .info__blocksGrade,
+    .info__blocksInfo {
+        justify-content: space-around;
+        gap: var(--item-gap);
+    }
+
+    .info__item,
+    .info__grade {
+        width: min(calc(100% / 2 - var(--item-gap) / 2), 400px);
+    }
+}
+
+@media (max-width: 700px) {
+
+    .info__item,
+    .info__grade {
+        width: min(calc(100% - var(--item-gap)), 400px);
+    }
+}
+
+@media (max-width: 400px) {
+    .info__grade {
+        justify-content: center;
+    }
 }

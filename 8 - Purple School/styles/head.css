@@ -5,7 +5,6 @@ header {
 .header {
     display: flex;
     flex-direction: column;
-    width: 100%;
 }
 
 .topPanel {
@@ -23,6 +22,7 @@ header {
 
 .textPlusIMG {
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
     margin-bottom: 100px;
@@ -36,4 +36,43 @@ header {
     font-size: 18px;
     display: flex;
     gap: 32px;
+}
+
+@media (max-width: 1500px) {
+    .bigTextBlock__text {
+        text-align: center;
+    }
+
+    .textPlusIMG,
+    .textPlusIMG__buttons {
+        justify-content: center;
+    }
+
+    .textPlusIMG {
+        flex-direction: column;
+    }
+}
+
+@media (max-width: 1000px) {
+
+    .topPanel__buttons .buttonList__button,
+    .topPanel__login {
+        display: none;
+    }
+
+    .topPanel__menu[hidden] {
+        display: block;
+    }
+}
+
+@media (max-width: 700px) {
+    .bigTextBlock__text {
+        font-size: 30px;
+    }
+}
+
+@media (max-width: 565px) {
+    .textPlusIMG__img {
+        display: none;
+    }
 }

@@ -8,6 +8,11 @@ footer {
     padding-bottom: 70px;
 }
 
+.footerLeft {
+    display: flex;
+    flex-direction: column;
+}
+
 .footer__logo {
     margin-bottom: 35px;
 }
@@ -17,6 +22,11 @@ footer {
     gap: 50px;
 
     margin-bottom: 50px;
+}
+
+.footer__list__url {
+    display: flex;
+    flex-direction: column;
 }
 
 .list__urls {
@@ -32,4 +42,38 @@ footer {
 .footer__urls {
     display: flex;
     gap: 30px;
+}
+
+@media (max-width: 1500px) {
+    .footer {
+        justify-content: center;
+    }
+
+    .footerLeft {
+        align-items: center;
+    }
+
+    .footer__last {
+        text-align: center;
+    }
+
+    .footer__list__url {
+        text-align: center;
+        width: min(calc(100% / 3), 400px);
+    }
+
+    .footerRight a {
+        display: none;
+    }
+}
+
+@media (max-width: 700px) {
+    .footer__urlsListsBlocks {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .footer__list__url {
+        width: 100%;
+    }
 }
