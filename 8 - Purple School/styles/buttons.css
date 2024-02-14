@@ -1,0 +1,50 @@
+.button {
+    padding: 10px;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.buttonBorder {
+    border: var(--gray) solid 2px;
+}
+
+.buttonBorder:active {
+    border: var(--blackout) solid 2px;
+}
+
+.button:hover {
+    background-color: var(--blackout);
+}
+
+.button_activeGrey:hover {
+    background-color: var(--gray);
+}
+
+.button_activeGrey:active {
+    background-color: var(--blackout);
+}
+
+.button_Purple {
+    background-color: var(--purple);
+}
+
+.button_Purple:hover,
+.button_hoverPurple:hover {
+    background-color: var(--darkpurple);
+}
+
+.button_Purple:active,
+.button_hoverPurple:hover,
+.button_activePurple:active {
+    background-color: var(--darkpurple2);
+}
+
+.buttonList {
+    display: flex;
+    flex-direction: row;
+    gap: 40px;
+}
+
+.bigTextBlock__button {
+    padding: 16px 32px;
+}

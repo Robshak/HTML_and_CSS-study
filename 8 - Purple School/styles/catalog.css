@@ -1,0 +1,19 @@
+.catalog {
+    display: flex;
+    flex-direction: column;
+}
+
+.catalog__head {
+    margin-bottom: 50px;
+}
+
+.catalog__buttons {
+    gap: 35px;
+    margin-bottom: 20px;
+}
+
+.catalog__items {
+    display: flex;
+    flex-wrap: wrap;
+    gap: var(--item-gap);
+}

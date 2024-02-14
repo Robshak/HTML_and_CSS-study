@@ -1,0 +1,33 @@
+.text_grad1 {
+    background: linear-gradient(93.33deg, #D77BE6 9.26%, #BE63E6 42.32%, #6C38CC 104.58%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+/* .text_grad2 {
+    background: linear-gradient(93.33deg, #D77BE6 9.26%, #BE63E6 42.32%, #6C38CC 104.58%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+} */
+
+.text_pink {
+    color: var(--pink);
+}
+
+.text_lightgray {
+    color: var(--lightgray);
+}
+
+.section__head__mini {
+    font-size: 16px;
+}
+
+.section__head__maxi {
+    font-size: 46px;
+}
+
+.section__mainText {
+    font-size: 18px;
+    max-width: 780px;
+    margin-bottom: 50px;
+}

@@ -1,0 +1,35 @@
+footer {
+    background-color: var(--almostBlack);
+}
+
+.footer {
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 70px;
+}
+
+.footer__logo {
+    margin-bottom: 35px;
+}
+
+.footer__urlsListsBlocks {
+    display: flex;
+    gap: 50px;
+
+    margin-bottom: 50px;
+}
+
+.list__urls {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.list__head {
+    margin-bottom: 20px;
+}
+
+.footer__urls {
+    display: flex;
+    gap: 30px;
+}

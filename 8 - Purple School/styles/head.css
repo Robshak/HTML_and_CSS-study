@@ -1,0 +1,39 @@
+header {
+    background-color: var(--background-color2);
+}
+
+.header {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.topPanel {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.topPanel__login {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    font-size: 18px;
+}
+
+.textPlusIMG {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 100px;
+}
+
+.bigTextBlock__text {
+    font-size: 54px;
+}
+
+.textPlusIMG__buttons {
+    font-size: 18px;
+    display: flex;
+    gap: 32px;
+}
