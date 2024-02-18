@@ -9,35 +9,35 @@
 
 .catalog__buttons {
     display: flex;
-    flex-wrap: wrap;
     gap: 35px;
     margin-bottom: 20px;
+    width: 100%;
+    overflow: scroll;
+    scrollbar-width: none;
+}
+
+.catalog__buttons::-webkit-scrollbar {
+    display: none;
+}
+
+.catalog__buttons .button {
+    white-space: nowrap;
 }
 
 .catalog__items {
-    display: flex;
-    flex-wrap: wrap;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(var(--item-base-sz), 1fr));
     gap: var(--item-gap);
 }
 
 @media (max-width: 1500px) {
-
-    .catalog {
-        align-items: center;
-    }
-
     .catalog__head {
         text-align: center;
-    }
-
-    .catalog__items,
-    .catalog__buttons {
-        justify-content: space-around;
     }
 }
 
 @media (max-width: 700px) {
     .catalog__buttons {
-        gap: 10px;
+        gap: 20px;
     }
 }

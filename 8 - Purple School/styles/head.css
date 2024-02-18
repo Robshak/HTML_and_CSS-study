@@ -69,10 +69,14 @@ header {
     .bigTextBlock__text {
         font-size: 30px;
     }
+
+    .topPanel__logo img {
+        max-width: 180px;
+    }
 }
 
 @media (max-width: 565px) {
     .textPlusIMG__img {
-        display: none;
+        width: 100%;
     }
 }

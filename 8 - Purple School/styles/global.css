@@ -23,6 +23,7 @@
 
     --size-maxima: 1400px;
 
+    --item-base-sz: 300px;
     --item-gap: 70px;
     --header-margin: 35px;
 }
@@ -37,7 +38,6 @@ body {
 .content {
     max-width: var(--size-maxima);
     margin: 0 auto;
-    /* padding: 50px 40px 50px 0; */
     padding: 40px 50px 0 50px;
 }
 
@@ -60,7 +60,7 @@ a:hover {
 
 @media (max-width: 630px) {
     .content {
-        padding-left: 15px !important;
-        padding-right: 15px !important;
+        padding-left: 30px !important;
+        padding-right: 30px !important;
     }
 }

@@ -1,0 +1,88 @@
+* {
+    box-sizing: border-box;
+}
+
+:root {
+    --background-color1: #16171D;
+    --background-color2: #1E1F29;
+    --background-color3: #101114;
+
+    --baseText-color: #FAFAFA;
+
+    --purple: #6C38CC;
+    --darkpurple: #5d30af;
+    --darkpurple2: #4e2896;
+    --lightgray: #AFB2BF;
+    --gray: #4D5064;
+    --darkgray: #1E1F29;
+    --pink: #E47AD5;
+    --darkviolet: #2E2D3D;
+    --almostBlack: #101114;
+    --easy-blackout: rgba(255, 255, 255, 0.521);
+    --blackout: rgba(255, 255, 255, 0.034);
+
+    --size-maxima: 1400px;
+
+    --item-gap: 70px;
+    --header-margin: 35px;
+}
+
+body {
+    background-color: var(--background-color1);
+    color: var(--baseText-color);
+    font-family: "Roboto", sans-serif;
+    margin: 30px;
+}
+
+.item {
+    color: var(--baseText-color);
+    font-size: 24px;
+    font-weight: 700;
+    border: 2px solid var(--purple);
+    text-align: center;
+    padding: 15px;
+}
+
+.wrapper {
+    display: grid;
+
+    /* задаёт размеры первых колонок
+       + может выполнять функциу определения количества */
+    /* fr(у флексов оказывается такая тоже есть) - это величина,
+       единица которой = доля от всех fr
+       а сумма всех fr = всё пространство отведённое под контент, с учётом gap и тп */
+    grid-template-columns: repeat(6, 1fr);
+
+    /* задаёь размеры первых строк
+       + может выполнять функциу определения количества */
+    /* grid-template-rows: 200px 100px; */
+
+    /* задаёт размеры строк, для тех, у которых мы в ручную не указали размер
+       + может применяться чередование при указании нескольких значений */
+    /* grid-auto-rows: 50px 100px; */
+
+    /* меняется направление построения элементов */
+    /* grid-auto-flow: column; */
+
+    /* такой же gap, как и во flex */
+    gap: 15px;
+}
+
+.item_11 {
+    /* задаём поведение конкретного элемента в рамках его колонки
+       span - задаёт ширину этого элемента в количестве блоков */
+    /* grid-column: span 2; */
+
+    /* задаём поведение конкретного элемента в рамках его строки */
+    /* grid-row: span 2; */
+
+    /* задаёт номера первой и последеней колонки, которые займёт элемент */
+    /* grid-column-start: 3; */
+    /* grid-column-end: 6; */
+    /* более короткая запись */
+    grid-column: 1 / span 3;
+
+    /* тоже самое, но для строк
+       + они могут вырывать элемент из позиции */
+    grid-row: 1 / 2;
+}

@@ -1,0 +1,103 @@
+* {
+    box-sizing: border-box;
+}
+
+:root {
+    --background-color1: #16171D;
+    --background-color2: #1E1F29;
+    --background-color3: #101114;
+
+    --baseText-color: #FAFAFA;
+
+    --purple: #6C38CC;
+    --darkpurple: #5d30af;
+    --darkpurple2: #4e2896;
+    --lightgray: #AFB2BF;
+    --gray: #4D5064;
+    --darkgray: #1E1F29;
+    --pink: #E47AD5;
+    --darkviolet: #2E2D3D;
+    --almostBlack: #101114;
+    --easy-blackout: rgba(255, 255, 255, 0.521);
+    --blackout: rgba(255, 255, 255, 0.034);
+
+    --size-maxima: 1400px;
+
+    --item-gap: 70px;
+    --header-margin: 35px;
+}
+
+body {
+    background-color: var(--background-color1);
+    color: var(--baseText-color);
+    font-family: "Roboto", sans-serif;
+    margin: 30px;
+}
+
+.item {
+    color: var(--baseText-color);
+    font-size: 24px;
+    font-weight: 700;
+    border: 2px solid var(--purple);
+    text-align: center;
+    padding: 15px;
+}
+
+.wrapper {
+    display: grid;
+    gap: 15px;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+
+    /* для удобства линии можно проименовать */
+    /* grid-template-columns: [s-left] 200px 200px [sidebar] 1fr 1fr [s-right]; */
+
+    /* для адаптива
+       fill - достраивает даже не существующие поля
+       fit - их обрезает
+       minmax - позволяет впихнуть столько элеменотов, 
+       что бы каждый был одного размера и при этом хотябы min(левое значение),
+       а если осталось свободное пространство то мы можем расширить наши
+       элементы до max(правое значение) */
+    /* grid-template-columns: repeat(auto-fit, minmax(400px, 1fr)); */
+
+    /* можем задать auto, что бы растянуть нужные нам колонки максимально сильно */
+    /* grid-template-columns: auto 100px 100px 100px; */
+
+    /* автозаполнение */
+    /* grid-auto-flow: dense; */
+
+    /* шаблон для расположения блоков
+       удобно для media */
+    /* grid-template-areas:
+        "header header header header"
+        "sidebar content content content"
+        "footer footer footer footer"; */
+
+    /* так же как и во flex есть эти методы и работают +- идентично
+       НО с адаптивом(auto-fit или тп) они могут не работать */
+    /* justify-content: space-around; */
+    /* align-items: end; */
+}
+
+/* .header {
+    grid-area: header;
+}
+
+.sidebar {
+    grid-area: sidebar;
+}
+
+.content {
+    grid-area: content;
+}
+
+.footer {
+    grid-area: footer;
+} */
+
+/* .item_9 {
+    order - абсолютно такой же как и во flex
+
+    grid-column: s-left / sidebar;
+} */
